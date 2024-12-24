@@ -1,0 +1,29 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+@await Html.PartialAsync("_HeadPartial")
+@await RenderSectionAsync("HeadBottomSection",false)
+  </head>
+  <body>
+    <div class="wrapper">
+@await Html.PartialAsync("_SideBarPartial")
+
+      <div class="main-panel">
+@await Html.PartialAsync("_MainHeaderPartial")
+
+        <div class="container">
+          <div class="page-inner">
+         @RenderBody()
+          </div>
+        </div>
+
+@await Html.PartialAsync("_FooterPartial")
+      </div>
+
+    </div>
+@await Html.PartialAsync("_JsPartial")   
+@await RenderSectionAsync("BodyBottomSection",false)
+@await Component.InvokeAsync("Notyf");
+  </body>
+</html>

@@ -1,0 +1,90 @@
+@model IEnumerable<ProductViewModel>
+@{
+    ViewData["Title"] = "Ürünler";
+}
+
+   <div class="page-header d-flex justify-content-between">
+     <h3 class="fw-bold mb-0">
+      @(ViewBag.IsDeleted ? "Ürünler Çöp Kutusu" : "Ürünler")
+     </h3> 
+     <div>
+      @if (ViewBag.IsDeleted==false) 
+      {
+      <a asp-controller="Product" asp-action="Index" asp-route-id="true" class="btn btn-danger btn-icon btn-round"title="Çöp Kutusuna Git">
+      <i class="fa fa-trash"></i>
+      </a>
+
+      }else
+      {
+      <a asp-controller="Product" asp-action="Index" asp-route-id="false" class="btn btn-success btn-icon btn-round"title="Silinmemiş Ürünleri Göster">
+      <i class="fas fa-check"></i>
+      </a>
+      }
+
+      <a asp-controller="Product" asp-action="Create" class="btn btn-primary btn-icon btn-round"title="Yeni Ürün Oluştur">
+      <i class="fas fa-plus"></i>
+      </a>
+      
+      
+     </div>
+   </div>
+   <div class="row">
+      <div class="col-md-12">
+                <div class="card">
+                  <div class="card-body">
+                    <div class="table-responsive">
+                      <table id="entity-datatables"class="display table table-striped table-hover">
+                        <thead>
+                          <tr>
+                            <th width="40">Id</th>
+                            <th>Ürünler</th>
+                            <th>Kategori</th>
+                            <th>Tedarikçi</th>
+                            <th>Stok Miktarı</th>
+                            <th >Minimum Stok Seviyesi</th>
+                            <th width="50">Fiyat</th>
+                            <th width="120">İşlemler</th>                         
+                          </tr>
+                        </thead>
+                        <tbody>
+                          @foreach(var x in Model)
+                            {
+                          <tr>
+                            <td>@x.Id</td>
+                            <td>@x.Name</td>
+                            <td>@x.CategoryName</td>
+                            <td>@x.SupplierName</td>
+                            <td>@x.StockQuantity</td>
+                            <td>@x.MinimumStockLevel</td>
+                            <td>@($"{x.Price:C}")</td>
+
+                            <td class="text-end">
+                      @if(ViewBag.IsDeleted==false) 
+                {
+      <a asp-controller="Product" asp-action="Update" asp-route-id="@x.Id" class="btn btn-warning btn-icon btn-round"title="Düzelt">
+      <i class="fas fa-pen"></i>
+      </a>
+      @* @await Html.PartialAsync("_CategorySoftDeletePartial",x) *@
+      <partial name="_ProductSoftDeletePartial" model="@x"/>
+       <partial name="_ProductHardDeletePartial" model="@x"/>
+
+                }else{
+      <a asp-controller="Product" asp-action="SoftDelete" asp-route-id="@x.Id" class="btn btn-warning btn-icon btn-round"title="Geri Al">
+      <i class="fas fa-undo"></i>
+      </a>
+      <partial name="_ProductHardDeletePartial" model="@x"/>
+          }
+            </td> 
+              </tr> 
+                 }      
+                </tbody>
+                </table>
+                </div>
+                </div>
+                </div>
+        </div>
+   </div>
+
+   @section BodyBottomSection{
+   @await Html.PartialAsync("_DataTablesPartial")
+   }

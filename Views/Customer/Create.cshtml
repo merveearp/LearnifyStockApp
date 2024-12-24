@@ -1,0 +1,66 @@
+@model CustomerCreateViewModel
+@{
+    ViewData["Title"] = "Yeni Müşteri Kaydı";
+}
+<form asp-controller="Customer" asp-action="Create" method="post"> 
+
+<div class="page-header d-flex justify-content-between">
+     <h3 class="fw-bold mb-3">Yeni Müşteri Kaydı</h3> 
+     <div>
+    <button type="submit"class="btn btn-success btn-icon btn-round" title="Kaydet">
+      <i class="fas fa-save"></i>
+      </button>
+      <a asp-controller="Customer" asp-action="Index" class="btn btn-warning btn-icon btn-round"title="Vazgeç">
+      <i class="fa fa-window-close"></i>
+      </a>
+      
+      
+     </div>
+   </div>
+    <div class="row">
+      <div class="col-md-12">
+                <div class="card">
+                  <div class="card-body">
+                    <div class="text-danger" asp-validation-summary="All"></div>
+                    <div class="form-group">
+                <label asp-for=Name></label>
+                <input asp-for=Name class="form-control form-control-lg"/>
+                </div>
+                 <div class="form-group">
+                <label asp-for=ContactName></label>
+                <input asp-for=ContactName class="form-control form-control-lg"/>
+                </div>
+                 <div class="form-group">
+                <label asp-for=Email></label>
+                <input asp-for=Email class="form-control form-control-lg"/>
+                </div>
+                 <div class="form-group">
+                <label asp-for=PhoneNumber></label>
+                <input asp-for=PhoneNumber class="form-control form-control-lg"/>
+                </div>
+
+                 <div class="form-group">
+                  <label asp-for=Address></label>
+                  <textarea asp-for=Address class="form-control" rows="5">
+                  </textarea>
+                </div>
+                 <div class="form-group">
+                <label asp-for=City></label>
+                <input asp-for=City class="form-control form-control-lg"/>
+                </div>
+                 <div class="form-group">
+                <label asp-for=Country></label>
+                <input asp-for=Country class="form-control form-control-lg"/>
+                </div>   
+                <div class="form-group text-end">
+              <button type="submit"class="btn btn-success btn-icon btn-round"title="Kaydet">
+                <i class="fas fa-save"></i>
+                </button>
+                </div>
+                    
+                </div>
+            </div>
+        </div>
+   </div>
+    
+</form>
