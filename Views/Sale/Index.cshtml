@@ -1,0 +1,87 @@
+@model IEnumerable<SaleViewModel>
+@{
+    ViewData["Title"] = "Satış Kayıtları";
+}
+
+   <div class="page-header d-flex justify-content-between">
+     <h3 class="fw-bold mb-0">
+      @(ViewBag.IsDeleted ? "Satış Kayıtları Çöp Kutusu" : "Satış Kayıtları")
+     </h3> 
+     <div>
+      @if (ViewBag.IsDeleted==false) 
+      {
+      <a asp-controller="Sale" asp-action="Index" asp-route-id="true" class="btn btn-danger btn-icon btn-round"title="Çöp Kutusuna Git">
+      <i class="fa fa-trash"></i>
+      </a>
+
+      }else
+      {
+      <a asp-controller="Sale" asp-action="Index" asp-route-id="false" class="btn btn-success btn-icon btn-round"title="Silinmemiş Ürünleri Göster">
+      <i class="fas fa-check"></i>
+      </a>
+      }
+
+      <a asp-controller="Sale" asp-action="Create" class="btn btn-primary btn-icon btn-round"title="Yeni Satış Kaydı Oluştur">
+      <i class="fas fa-plus"></i>
+      </a>
+      
+      
+     </div>
+   </div>
+   <div class="row">
+      <div class="col-md-12">
+                <div class="card">
+                  <div class="card-body">
+                    <div class="table-responsive">
+                      <table id="entity-datatables"class="display table table-striped table-hover">
+                        <thead>
+                          <tr>
+                            <th width="40">Id</th>
+                            <th>Ürünler</th>
+                            <th>Müşteriler</th>
+                            <th>Miktar</th>
+                            <th width="50"> Birim Fiyat</th>
+                            <th >Satış Tarihi</th>
+                            <th width="120">İşlemler</th>                         
+                          </tr>
+                        </thead>
+                        <tbody>
+                          @foreach(var x in Model)
+                            {
+                          <tr>
+                            <td>@x.Id</td>
+                            <td>@x.ProductName</td>
+                            <td>@x.CustomerName</td>
+                            <td>@x.Quantity</td>
+                            <td>@x.UnitPrice</td>
+                            <td>@x.SaleDate</td>
+                            <td class="text-end">
+                      @if(ViewBag.IsDeleted==false) 
+                {
+      <a asp-controller="Sale" asp-action="Update" asp-route-id="@x.Id" class="btn btn-warning btn-icon btn-round"title="Düzelt">
+      <i class="fas fa-pen"></i>
+      </a>
+      @* @await Html.PartialAsync("_CategorySoftDeletePartial",x) *@
+      <partial name="_SaleSoftDeletePartial" model="@x"/>
+       <partial name="_SaleHardDeletePartial" model="@x"/>
+
+                }else{
+      <a asp-controller="Sale" asp-action="SoftDelete" asp-route-id="@x.Id" class="btn btn-warning btn-icon btn-round"title="Geri Al">
+      <i class="fas fa-undo"></i>
+      </a>
+      <partial name="_SaleHardDeletePartial" model="@x"/>
+          }
+            </td> 
+              </tr> 
+                 }      
+                </tbody>
+                </table>
+                </div>
+                </div>
+                </div>
+        </div>
+   </div>
+
+   @section BodyBottomSection{
+   @await Html.PartialAsync("_DataTablesPartial")
+   }

@@ -1,0 +1,63 @@
+@model SaleCreateViewModel
+@{
+    ViewData["Title"] = "Yeni Satış Kaydı";
+}
+
+<form asp-controller="Sale" asp-action="Create" method="post"> 
+
+<div class="page-header d-flex justify-content-between">
+     <h3 class="fw-bold mb-3">Yeni Satış Kaydı</h3> 
+<div>
+    <button type="submit"class="btn btn-success btn-icon btn-round" title="Kaydet">
+      <i class="fas fa-save"></i>
+      </button>
+      <a asp-controller="Sale" asp-action="Index" class="btn btn-warning btn-icon btn-round"title="Vazgeç">
+      <i class="fas fa-window-close"></i>
+      </a>    
+     </div>
+   </div>
+  <div class="row">
+      <div class="col-md-12 ">
+                <div class="card">
+                  <div class="card-body">
+                <div class="text-danger" asp-validation-summary="All"></div>
+        <div class="col-md-6">
+            <div class="card">
+                  <div class="card-body">
+                <div class="row">
+                <div class="form-group col-md-4">
+                <label asp-for=Quantity></label>
+                <input asp-for=Quantity class="form-control form-control-lg"/>
+                </div>
+                
+                <div class="form-group col-md-4">
+                <label asp-for=UnitPrice></label>
+                <input asp-for=UnitPrice class="form-control form-control-lg">
+                </input>
+                </div>
+                <div class="form-group col-md-12">
+                <label asp-for=ProductList></label>
+                <select asp-items=@Model.ProductList asp-for=ProductId class="form-select form-control-lg" id="largeSelect"></select>
+                </div>
+                <div class="form-group col-md-12">
+                <label asp-for=CustomerList></label>
+                <select asp-items=@Model.CustomerList asp-for=CustomerId class="form-select form-control-lg" id="largeSelect"></select>
+                </div>
+                </div>                  
+        </div>                  
+        </div>  
+        </div>
+       
+        <div class="form-group text-end">
+        <button type="submit"class="btn btn-success btn-icon btn-round"title="Kaydet">
+         <i class="fas fa-save"></i>
+        </button>
+        </div>        
+        </div>
+                </div>
+                </div>      
+            </div>      
+        </div>  
+        </div>
+         </div>   
+</form>

@@ -1,0 +1,2 @@
+# LearnifyStockApp
+ StokYönetimPaneli

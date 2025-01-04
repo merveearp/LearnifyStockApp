@@ -1,0 +1,28 @@
+﻿@model SaleViewModel
+@* <a asp-controller="Category" asp-action="SoftDelete" asp-route-id="@x.Id" class="btn btn-info btn-icon btn-round"title="Çöp Kutusuna Gönder">
+<i class="fa fa-chevron-up"></i>
+</a> *@
+
+<!-- Button trigger modal -->
+<a class="btn btn-info btn-icon btn-round"title="Çöp Kutusuna Gönder" data-bs-toggle="modal" data-bs-target="#soft-delete-modal-@Model.Id">
+  <i class="fa fa-chevron-up"></i>
+</a>
+
+<!-- Modal -->
+<div class="modal fade" id="soft-delete-modal-@Model.Id" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5 text-danger" id="exampleModalLabel">DİKKAT!</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+    <span class="text-danger">"@Model.Id"</span>ID' li satış kaydı çöp kutusuna gönderilecektir .Emin misiniz?
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-info" data-bs-dismiss="modal">Hayır</button>
+        <a asp-controller="Sale" asp-action="SoftDelete" asp-route-id="@Model.Id"  class="btn btn-primary">Evet</a>
+      </div>
+    </div>
+  </div>
+</div>

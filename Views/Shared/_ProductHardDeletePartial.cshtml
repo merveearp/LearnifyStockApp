@@ -1,0 +1,25 @@
+﻿@model ProductViewModel
+
+<!-- Button trigger modal -->
+<a class="btn btn-danger btn-icon btn-round"title="Kalıcı Olarak Sil" data-bs-toggle="modal" data-bs-target="#hard-delete-modal-@Model.Id">
+  <i class="fa fa-trash"></i>
+</a>
+
+<!-- Modal -->
+<div class="modal fade" id="hard-delete-modal-@Model.Id" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5 text-danger " id="exampleModalLabel">DİKKAT!</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+    <span class="text-danger">"@Model.Name"</span> adlı ürün kalıcı olarak silinecektir.Emin misiniz?
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-info" data-bs-dismiss="modal">Hayır</button>
+        <a asp-controller="Product" asp-action="HardDelete" asp-route-id="@Model.Id"  class="btn btn-primary">Evet</a>
+      </div>
+    </div>
+  </div>
+</div>

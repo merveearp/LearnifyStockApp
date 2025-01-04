@@ -1,0 +1,175 @@
+is_global = true
+build_property.TargetFramework = net8.0
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = true
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = 
+build_property.PlatformNeutralAssembly = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property.RootNamespace = LearnifyStockApp
+build_property.RootNamespace = LearnifyStockApp
+build_property.ProjectDir = C:\Users\Asus\Desktop\AcunMedyaDersleri\06-TEKRAR_DERSLERİ\Week19\19-12-2024\LearnifyStockApp\
+build_property.EnableComHosting = 
+build_property.EnableGeneratedComInterfaceComImportInterop = 
+build_property.RazorLangVersion = 8.0
+build_property.SupportLocalizedComponentNames = 
+build_property.GenerateRazorMetadataSourceChecksumAttributes = 
+build_property.MSBuildProjectDirectory = C:\Users\Asus\Desktop\AcunMedyaDersleri\06-TEKRAR_DERSLERİ\Week19\19-12-2024\LearnifyStockApp
+build_property._RazorSourceGeneratorDebug = 
+
+[C:/Users/Asus/Desktop/AcunMedyaDersleri/06-TEKRAR_DERSLERİ/Week19/19-12-2024/LearnifyStockApp/Views/Category/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2F0ZWdvcnlcQ3JlYXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Asus/Desktop/AcunMedyaDersleri/06-TEKRAR_DERSLERİ/Week19/19-12-2024/LearnifyStockApp/Views/Category/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2F0ZWdvcnlcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Asus/Desktop/AcunMedyaDersleri/06-TEKRAR_DERSLERİ/Week19/19-12-2024/LearnifyStockApp/Views/Category/Update.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2F0ZWdvcnlcVXBkYXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Asus/Desktop/AcunMedyaDersleri/06-TEKRAR_DERSLERİ/Week19/19-12-2024/LearnifyStockApp/Views/Customer/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ3VzdG9tZXJcQ3JlYXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Asus/Desktop/AcunMedyaDersleri/06-TEKRAR_DERSLERİ/Week19/19-12-2024/LearnifyStockApp/Views/Customer/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ3VzdG9tZXJcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Asus/Desktop/AcunMedyaDersleri/06-TEKRAR_DERSLERİ/Week19/19-12-2024/LearnifyStockApp/Views/Customer/Update.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ3VzdG9tZXJcVXBkYXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Asus/Desktop/AcunMedyaDersleri/06-TEKRAR_DERSLERİ/Week19/19-12-2024/LearnifyStockApp/Views/Home/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Asus/Desktop/AcunMedyaDersleri/06-TEKRAR_DERSLERİ/Week19/19-12-2024/LearnifyStockApp/Views/Product/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZHVjdFxDcmVhdGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Asus/Desktop/AcunMedyaDersleri/06-TEKRAR_DERSLERİ/Week19/19-12-2024/LearnifyStockApp/Views/Product/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZHVjdFxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Asus/Desktop/AcunMedyaDersleri/06-TEKRAR_DERSLERİ/Week19/19-12-2024/LearnifyStockApp/Views/Product/Update.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZHVjdFxVcGRhdGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Asus/Desktop/AcunMedyaDersleri/06-TEKRAR_DERSLERİ/Week19/19-12-2024/LearnifyStockApp/Views/Sale/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2FsZVxDcmVhdGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Asus/Desktop/AcunMedyaDersleri/06-TEKRAR_DERSLERİ/Week19/19-12-2024/LearnifyStockApp/Views/Sale/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2FsZVxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Asus/Desktop/AcunMedyaDersleri/06-TEKRAR_DERSLERİ/Week19/19-12-2024/LearnifyStockApp/Views/Sale/Update.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2FsZVxVcGRhdGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Asus/Desktop/AcunMedyaDersleri/06-TEKRAR_DERSLERİ/Week19/19-12-2024/LearnifyStockApp/Views/Shared/_CategoryHardDeletePartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9DYXRlZ29yeUhhcmREZWxldGVQYXJ0aWFsLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Asus/Desktop/AcunMedyaDersleri/06-TEKRAR_DERSLERİ/Week19/19-12-2024/LearnifyStockApp/Views/Shared/_CategorySoftDeletePartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9DYXRlZ29yeVNvZnREZWxldGVQYXJ0aWFsLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Asus/Desktop/AcunMedyaDersleri/06-TEKRAR_DERSLERİ/Week19/19-12-2024/LearnifyStockApp/Views/Shared/_CustomerHardDeletePartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9DdXN0b21lckhhcmREZWxldGVQYXJ0aWFsLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Asus/Desktop/AcunMedyaDersleri/06-TEKRAR_DERSLERİ/Week19/19-12-2024/LearnifyStockApp/Views/Shared/_CustomerSoftDeletePartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9DdXN0b21lclNvZnREZWxldGVQYXJ0aWFsLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Asus/Desktop/AcunMedyaDersleri/06-TEKRAR_DERSLERİ/Week19/19-12-2024/LearnifyStockApp/Views/Shared/_DataTablesPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9EYXRhVGFibGVzUGFydGlhbC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Asus/Desktop/AcunMedyaDersleri/06-TEKRAR_DERSLERİ/Week19/19-12-2024/LearnifyStockApp/Views/Shared/_FooterPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9Gb290ZXJQYXJ0aWFsLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Asus/Desktop/AcunMedyaDersleri/06-TEKRAR_DERSLERİ/Week19/19-12-2024/LearnifyStockApp/Views/Shared/_HeadCSSPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9IZWFkQ1NTUGFydGlhbC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Asus/Desktop/AcunMedyaDersleri/06-TEKRAR_DERSLERİ/Week19/19-12-2024/LearnifyStockApp/Views/Shared/_HeadFontsAndIconsPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9IZWFkRm9udHNBbmRJY29uc1BhcnRpYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Asus/Desktop/AcunMedyaDersleri/06-TEKRAR_DERSLERİ/Week19/19-12-2024/LearnifyStockApp/Views/Shared/_HeadPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9IZWFkUGFydGlhbC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Asus/Desktop/AcunMedyaDersleri/06-TEKRAR_DERSLERİ/Week19/19-12-2024/LearnifyStockApp/Views/Shared/_JsPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9Kc1BhcnRpYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Asus/Desktop/AcunMedyaDersleri/06-TEKRAR_DERSLERİ/Week19/19-12-2024/LearnifyStockApp/Views/Shared/_Layout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Asus/Desktop/AcunMedyaDersleri/06-TEKRAR_DERSLERİ/Week19/19-12-2024/LearnifyStockApp/Views/Shared/_MainHeaderPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9NYWluSGVhZGVyUGFydGlhbC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Asus/Desktop/AcunMedyaDersleri/06-TEKRAR_DERSLERİ/Week19/19-12-2024/LearnifyStockApp/Views/Shared/_ProductHardDeletePartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9Qcm9kdWN0SGFyZERlbGV0ZVBhcnRpYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Asus/Desktop/AcunMedyaDersleri/06-TEKRAR_DERSLERİ/Week19/19-12-2024/LearnifyStockApp/Views/Shared/_ProductSoftDeletePartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9Qcm9kdWN0U29mdERlbGV0ZVBhcnRpYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Asus/Desktop/AcunMedyaDersleri/06-TEKRAR_DERSLERİ/Week19/19-12-2024/LearnifyStockApp/Views/Shared/_SaleHardDeletePartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9TYWxlSGFyZERlbGV0ZVBhcnRpYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Asus/Desktop/AcunMedyaDersleri/06-TEKRAR_DERSLERİ/Week19/19-12-2024/LearnifyStockApp/Views/Shared/_SaleSoftDeletePartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9TYWxlU29mdERlbGV0ZVBhcnRpYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Asus/Desktop/AcunMedyaDersleri/06-TEKRAR_DERSLERİ/Week19/19-12-2024/LearnifyStockApp/Views/Shared/_SideBarMenuPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9TaWRlQmFyTWVudVBhcnRpYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Asus/Desktop/AcunMedyaDersleri/06-TEKRAR_DERSLERİ/Week19/19-12-2024/LearnifyStockApp/Views/Shared/_SideBarPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9TaWRlQmFyUGFydGlhbC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Asus/Desktop/AcunMedyaDersleri/06-TEKRAR_DERSLERİ/Week19/19-12-2024/LearnifyStockApp/Views/Shared/_SupplierHardDeletePartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9TdXBwbGllckhhcmREZWxldGVQYXJ0aWFsLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Asus/Desktop/AcunMedyaDersleri/06-TEKRAR_DERSLERİ/Week19/19-12-2024/LearnifyStockApp/Views/Shared/_SupplierSoftDeletePartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9TdXBwbGllclNvZnREZWxldGVQYXJ0aWFsLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Asus/Desktop/AcunMedyaDersleri/06-TEKRAR_DERSLERİ/Week19/19-12-2024/LearnifyStockApp/Views/Shared/_ValidationScriptsPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Asus/Desktop/AcunMedyaDersleri/06-TEKRAR_DERSLERİ/Week19/19-12-2024/LearnifyStockApp/Views/Supplier/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU3VwcGxpZXJcQ3JlYXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Asus/Desktop/AcunMedyaDersleri/06-TEKRAR_DERSLERİ/Week19/19-12-2024/LearnifyStockApp/Views/Supplier/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU3VwcGxpZXJcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Asus/Desktop/AcunMedyaDersleri/06-TEKRAR_DERSLERİ/Week19/19-12-2024/LearnifyStockApp/Views/Supplier/Update.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU3VwcGxpZXJcVXBkYXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Asus/Desktop/AcunMedyaDersleri/06-TEKRAR_DERSLERİ/Week19/19-12-2024/LearnifyStockApp/Views/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Asus/Desktop/AcunMedyaDersleri/06-TEKRAR_DERSLERİ/Week19/19-12-2024/LearnifyStockApp/Views/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 

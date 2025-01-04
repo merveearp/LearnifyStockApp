@@ -1,0 +1,88 @@
+@model IEnumerable<CustomerViewModel>
+@{
+    ViewData["Title"] = "Müşteriler";
+}
+   <div class="page-header d-flex justify-content-between">
+     <h3 class="fw-bold mb-0">
+      @(ViewBag.IsDeleted ? "Müşteriler Çöp Kutusu" : "Müşteriler")
+     </h3> 
+     <div>
+      @if (ViewBag.IsDeleted==false) 
+      {
+      <a asp-controller="Customer" asp-action="Index" asp-route-id="true" class="btn btn-danger btn-icon btn-round"title="Çöp Kutusuna Git">
+      <i class="fas fa-trash"></i>
+      </a>
+
+      }else
+      {
+      <a asp-controller="Customer" asp-action="Index" asp-route-id="false" class="btn btn-success btn-icon btn-round"title="Silinmemişleri Göster">
+      <i class="fas fa-check"></i>
+      </a>
+      }
+
+      <a asp-controller="Customer" asp-action="Create" class="btn btn-primary btn-icon btn-round"title="Yeni Müşteri Kaydı Oluştur">
+      <i class="fas fa-plus"></i>
+      </a>
+      
+      
+     </div>
+   </div>
+   <div class="row">
+      <div class="col-md-12">
+                <div class="card">
+                  <div class="card-body">
+                    <div class="table-responsive">
+                      <table id="entity-datatables"class="display table table-striped table-hover">
+                        <thead>
+                          <tr>
+                            <th width="40">Id</th>
+                            <th>Müşteri</th>
+                            <th>İletişim Kişisi</th>
+                            <th>Email</th>
+                            <th>Telefon</th>
+                            <th>Adres</th>
+                            <th>Şehir</th>
+                            <th width="120">İşlemler</th>                         
+                          </tr>
+                        </thead>
+                        <tbody>
+                          @foreach(var x in Model)
+                            {
+                          <tr>
+                            <td>@x.Id</td>
+                            <td>@x.Name</td>
+                            <td>@x.ContactName</td>
+                            <td>@x.Email</td>
+                            <td>@x.PhoneNumber</td>
+                            <td>@x.Address</td>
+                            <td>@x.City</td>
+                            <td class="text-end">
+                      @if(ViewBag.IsDeleted==false) 
+                {
+      <a asp-controller="Customer" asp-action="Update" asp-route-id="@x.Id" class="btn btn-warning btn-icon btn-round"title="Düzelt">
+      <i class="fas fa-pen"></i>
+      </a>
+      @* @await Html.PartialAsync("_CategorySoftDeletePartial",x) *@
+      <partial name="_CustomerSoftDeletePartial" model="@x"/>
+       <partial name="_CustomerHardDeletePartial" model="@x"/>
+
+                }else{
+      <a asp-controller="Customer" asp-action="SoftDelete" asp-route-id="@x.Id" class="btn btn-warning btn-icon btn-round"title="Geri Al">
+      <i class="fas fa-undo"></i>
+      </a>
+      <partial name="_CustomerHardDeletePartial" model="@x"/>
+          }
+            </td> 
+              </tr> 
+                 }      
+                </tbody>
+                </table>
+                </div>
+                </div>
+                </div>
+        </div>
+   </div>
+
+   @section BodyBottomSection{
+   @await Html.PartialAsync("_DataTablesPartial")
+   }
